@@ -41,7 +41,7 @@ fun RatingCard(text : String){
 
     val boxColor: Color
     val border : BorderStroke?
-    val starColor: Color
+
 
     val isNew = rating == null
 
@@ -50,7 +50,6 @@ fun RatingCard(text : String){
     if (rating==null){
         boxColor = Color.Transparent
         border = BorderStroke(1.dp, Color(0xFF8791FF))
-        starColor = Color.Transparent
 
     }else{
         border = null
@@ -110,5 +109,5 @@ fun RatingCard(text : String){
 @Preview
 @Composable
 private fun my_preview46() {
-RatingCard(text = "New")
+RatingCard(text = "4.3")
 }

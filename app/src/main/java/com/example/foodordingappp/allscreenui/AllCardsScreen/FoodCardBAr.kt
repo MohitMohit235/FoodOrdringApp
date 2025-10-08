@@ -23,6 +23,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.DividerDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.VerticalDivider
 import androidx.compose.runtime.mutableStateListOf
@@ -97,8 +98,9 @@ fun FoodCard(
                         Box(
                             modifier = Modifier
                                 .padding(start = 5.dp)
-                                .clip(shape = RoundedCornerShape(2.dp))
+                                .clip(shape = MaterialTheme.shapes.extraSmall)
                                 .background(Color.Black.copy(alpha = 0.7f))
+                                .padding(horizontal = 5.dp)
 
                         ) {
                             Text(
@@ -107,7 +109,7 @@ fun FoodCard(
                                 fontSize = 8.sp,
                                 fontFamily = Lexend,
                                 fontWeight = FontWeight.Normal,
-                                modifier = Modifier.padding(2.dp)
+                                modifier = Modifier.padding(3.dp)
                             )
                         }
 
@@ -152,10 +154,10 @@ fun FoodCard(
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-                    Row (verticalAlignment = Alignment.CenterVertically){
+                    Row (verticalAlignment = Alignment.Bottom){
                         Text(
                             text = restaurantName,
-                            fontSize = 15.sp,
+                            fontSize = 18.sp,
                             fontFamily = Lexend,
                             fontWeight = FontWeight.Bold
                         )
@@ -164,7 +166,9 @@ fun FoodCard(
 
                         Row(
                             verticalAlignment = Alignment.CenterVertically,
-                            horizontalArrangement = Arrangement.spacedBy(1.dp)
+                            horizontalArrangement = Arrangement.spacedBy(1.dp),
+                            modifier = Modifier
+                                .padding(bottom = 3.dp)
                         ) {
                            Icon(
                                painter = painterResource(id = veg_icon),
