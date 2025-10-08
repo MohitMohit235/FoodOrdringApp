@@ -59,7 +59,7 @@ fun MORE_EXPLORE(){
                     .height(80.dp)
                     .padding(start = 8.dp, end = 8.dp),
                 verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(20.dp)
+                horizontalArrangement = Arrangement.spacedBy(30.dp)
             ) {
 
                 MoreCard(imag = R.drawable.img9, Text = "Offers")
