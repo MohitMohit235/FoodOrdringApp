@@ -167,7 +167,7 @@ fun TopBar(){
             Box(
                 modifier = Modifier
                     .clip(RoundedCornerShape(10.dp))
-                    .background(Color.DarkGray.copy(alpha = 0.5f))
+//                    .background(Color.DarkGray.copy(alpha = 0.5f))
                     .size(30.dp)
 
 
@@ -177,6 +177,7 @@ fun TopBar(){
                 Icon(
                     imageVector = Icons.Filled.Person,
                     contentDescription = "Profile Pic",
+                    tint = Color.Black,
                     modifier = Modifier
                         .size(40.dp)
                 )

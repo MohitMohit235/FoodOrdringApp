@@ -18,16 +18,12 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ShareLocation
 import androidx.compose.material.icons.outlined.Timelapse
-import androidx.compose.material.icons.outlined.Timer
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.DividerDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.VerticalDivider
-import androidx.compose.runtime.mutableStateListOf
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
@@ -59,8 +55,9 @@ fun FoodCard(
     address: String,
     offer: String? = null,
     price: Int,
-    distance : String,
-    veg_icon : Int
+    distance: String,
+    veg_icon: Int,
+    rating: Double?
 
 ) {
 
@@ -100,7 +97,7 @@ fun FoodCard(
                                 .padding(start = 5.dp)
                                 .clip(shape = MaterialTheme.shapes.extraSmall)
                                 .background(Color.Black.copy(alpha = 0.7f))
-                                .padding(horizontal = 5.dp)
+                                .padding(horizontal = 1.dp)
 
                         ) {
                             Text(
@@ -109,7 +106,9 @@ fun FoodCard(
                                 fontSize = 8.sp,
                                 fontFamily = Lexend,
                                 fontWeight = FontWeight.Normal,
-                                modifier = Modifier.padding(3.dp)
+                               modifier = Modifier
+                                   .padding(
+                                       horizontal = 4.dp)
                             )
                         }
 
@@ -159,7 +158,8 @@ fun FoodCard(
                             text = restaurantName,
                             fontSize = 18.sp,
                             fontFamily = Lexend,
-                            fontWeight = FontWeight.Bold
+                            fontWeight = FontWeight.Bold,
+                            color = Color.Black.copy(alpha = 0.8f)
                         )
 
                         Spacer(modifier = Modifier.width(5.dp))
@@ -167,8 +167,7 @@ fun FoodCard(
                         Row(
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.spacedBy(1.dp),
-                            modifier = Modifier
-                                .padding(bottom = 3.dp)
+                            modifier = Modifier.padding(vertical = 1.dp)
                         ) {
                            Icon(
                                painter = painterResource(id = veg_icon),
@@ -186,7 +185,7 @@ fun FoodCard(
                             )
                         }
                     }
-                    RatingCard(text = "4.3")
+                    RatingCard(text = "${rating}")
                 }
 
                 Spacer(modifier = Modifier.height(6.dp))
@@ -282,6 +281,7 @@ private fun my_preview46() {
         offer = "10% OFF up to ₹200",
         price = 360,
         distance = "1.6km",
-        veg_icon = R.drawable.nonveg_icon
+        veg_icon = R.drawable.nonveg_icon,
+        rating = 3.4
     )
 }

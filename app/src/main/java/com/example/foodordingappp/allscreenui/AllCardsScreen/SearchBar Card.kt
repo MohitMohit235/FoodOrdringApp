@@ -104,7 +104,8 @@ fun SearchBar(texts: List<String>,
                             imageVector = Icons.Outlined.Search,
                             contentDescription = "search bar",
                             tint = Color(0xFF6471FF),
-                            modifier = Modifier.size(25.dp)
+                            modifier = Modifier.size(35.dp)
+                                .padding(start = 10.dp)
                         )
 
                         Spacer(modifier = Modifier.width(8.dp))
@@ -151,7 +152,7 @@ fun SearchBar(texts: List<String>,
                             }
                         }
 
-                        Spacer(modifier = Modifier.width(50.dp))
+                        Spacer(modifier = Modifier.width(40.dp))
                         VerticalDivider(
                             thickness = 1.dp,
                             modifier = Modifier.height(27.dp),

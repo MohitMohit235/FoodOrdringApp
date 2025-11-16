@@ -6,11 +6,9 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Star
@@ -31,13 +29,13 @@ import com.example.foodordingappp.R
 
 
 @Composable
-fun RatingCard(text : String){
+fun RatingCard(text: String?){
 
     val Lexend =FontFamily(
         Font(R.font.lexend_regular, FontWeight.Normal)
     )
 
-    val rating = text.toDoubleOrNull()
+    val rating = text?.toDoubleOrNull()
 
     val boxColor: Color
     val border : BorderStroke?
@@ -49,7 +47,7 @@ fun RatingCard(text : String){
 
     if (rating==null){
         boxColor = Color.Transparent
-        border = BorderStroke(1.dp, Color(0xFF8791FF))
+        border = BorderStroke(1.dp, Color.Transparent)
 
     }else{
         border = null
@@ -64,8 +62,8 @@ fun RatingCard(text : String){
 
     Box(
         modifier = Modifier
-            .width(37.dp)
-            .height(15.dp)
+
+            .height(20.dp)
             .clip(RoundedCornerShape(3.dp))
             .background(boxColor)
             .then(
@@ -80,24 +78,26 @@ fun RatingCard(text : String){
     ){
         Row (
             modifier = Modifier
-                .fillMaxWidth()
                 .padding(horizontal = 5.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ){
-            Text(
-                text = text,
-                fontSize = 12.sp,
-                color = Color.White,
-                fontFamily = Lexend
-            )
+                if (text != null) {
+                    Text(
+                        text = text,
+                        fontSize = 12.sp,
+                        color = Color.White,
+                        fontFamily = Lexend
+
+                    )
+                }
             if (!isNew) {
                 Icon(
                     imageVector = Icons.Filled.Star,
                     contentDescription = "rating star",
                     tint = Color.White,
                     modifier = Modifier
-                        .size(8.dp)
+                        .size(12.dp)
                 )
             }
         }
@@ -109,5 +109,5 @@ fun RatingCard(text : String){
 @Preview
 @Composable
 private fun my_preview46() {
-RatingCard(text = "4.3")
+RatingCard(text = null)
 }

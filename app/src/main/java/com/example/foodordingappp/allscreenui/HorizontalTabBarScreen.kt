@@ -56,8 +56,7 @@ fun HorizontalTabBar() {
         FilterItem(text = "Under 30 mins"),
         FilterItem(text = "Under₹150"),
         FilterItem(text = "Rating 4.0+"),
-        FilterItem(text = "Pure Veg"),
-        FilterItem(text = "Dessert")
+        FilterItem(text = "Pure Veg")
     )
 
     LazyRow(

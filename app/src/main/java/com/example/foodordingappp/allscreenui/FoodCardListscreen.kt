@@ -20,7 +20,8 @@ fun FoodList(){
             offer = "10% OFF up to ₹200",
             price = 360,
             distance = "1.6km",
-            veg_icon = R.drawable.nonveg_icon
+            veg_icon = R.drawable.nonveg_icon,
+            rating = null
 
         ),
         FoodCard(
@@ -32,7 +33,8 @@ fun FoodList(){
             offer = null,
             price = 360,
             distance = "1.6km",
-            veg_icon = R.drawable.veg_icon
+            veg_icon = R.drawable.veg_icon,
+            rating = 5.0
         ),
         FoodCard(
             img = R.drawable.food3,
@@ -43,7 +45,8 @@ fun FoodList(){
             offer = null,
             price = 360,
             distance = "1.6km",
-            veg_icon = R.drawable.nonveg_icon
+            veg_icon = R.drawable.nonveg_icon,
+            rating = 1.5
         ),
         FoodCard(
             img = R.drawable.food4,
@@ -54,7 +57,8 @@ fun FoodList(){
             offer = null,
             price = 360,
             distance = "1.6km",
-            veg_icon = R.drawable.nonveg_icon
+            veg_icon = R.drawable.nonveg_icon,
+            rating = 1.3
         ),
         FoodCard(
             img = R.drawable.food5,
@@ -65,7 +69,8 @@ fun FoodList(){
             offer = null,
             price = 360,
             distance = "1.6km",
-            veg_icon = R.drawable.nonveg_icon
+            veg_icon = R.drawable.nonveg_icon,
+            rating = 3.8
         ),
         FoodCard(
             img = R.drawable.food6,
@@ -76,7 +81,8 @@ fun FoodList(){
             offer = "10% OFF up to ₹200",
             price = 360,
             distance = "1.6km",
-            veg_icon = R.drawable.nonveg_icon
+            veg_icon = R.drawable.nonveg_icon,
+            rating = 3.8
         ),
         FoodCard(
             img = R.drawable.food7,
@@ -87,7 +93,8 @@ fun FoodList(){
             offer = "10% OFF up to ₹200",
             price = 360,
             distance = "1.6km",
-            veg_icon = R.drawable.nonveg_icon
+            veg_icon = R.drawable.nonveg_icon,
+            rating = 2.4
         ),
         FoodCard(
             img = R.drawable.food8,
@@ -98,7 +105,8 @@ fun FoodList(){
             offer = "10% OFF up to ₹200",
             price = 360,
             distance = "1.6km",
-            veg_icon = R.drawable.nonveg_icon
+            veg_icon = R.drawable.nonveg_icon,
+            rating = 4.8
         ),
         FoodCard(
             img = R.drawable.food9,
@@ -109,7 +117,8 @@ fun FoodList(){
             offer = "10% OFF up to ₹200",
             price = 360,
             distance = "1.6km",
-            veg_icon = R.drawable.nonveg_icon
+            veg_icon = R.drawable.nonveg_icon,
+            rating = 4.5
         ),
         FoodCard(
             img = R.drawable.food10,
@@ -120,7 +129,8 @@ fun FoodList(){
             offer = "10% OFF up to ₹200",
             price = 360,
             distance = "1.6km",
-            veg_icon = R.drawable.nonveg_icon
+            veg_icon = R.drawable.nonveg_icon,
+            rating = 3.8
         )
 
 
