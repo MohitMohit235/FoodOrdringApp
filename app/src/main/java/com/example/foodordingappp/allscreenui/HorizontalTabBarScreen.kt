@@ -117,7 +117,7 @@ fun TabCard(
 
             Text(
                 text = text,
-                color = Color.Black,
+                color = Color.Black.copy(alpha = 0.7f),
                 fontSize = 12.sp,
                 fontFamily = jonefont,
                 fontWeight = FontWeight.Normal
