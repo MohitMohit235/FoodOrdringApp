@@ -1,11 +1,11 @@
-package com.example.foodordingappp.allscreenui
+package com.example.foodordingappp.allscreenui.listpackge
 
 
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.foodordingappp.R
-import com.example.foodordingappp.allscreenui.AllCardsScreen.FoodCard
+import com.example.foodordingappp.allscreenui.allcardpackeg.FoodCard
 
 
 @Composable
@@ -34,7 +34,7 @@ fun FoodList(){
             price = 360,
             distance = "1.6km",
             veg_icon = R.drawable.veg_icon,
-            rating = 5.0
+            rating = "4.2"
         ),
         FoodCard(
             img = R.drawable.food3,
@@ -46,7 +46,7 @@ fun FoodList(){
             price = 360,
             distance = "1.6km",
             veg_icon = R.drawable.nonveg_icon,
-            rating = 1.5
+            rating = "2.4"
         ),
         FoodCard(
             img = R.drawable.food4,
@@ -58,7 +58,7 @@ fun FoodList(){
             price = 360,
             distance = "1.6km",
             veg_icon = R.drawable.nonveg_icon,
-            rating = 1.3
+            rating = "1.3"
         ),
         FoodCard(
             img = R.drawable.food5,
@@ -70,7 +70,7 @@ fun FoodList(){
             price = 360,
             distance = "1.6km",
             veg_icon = R.drawable.nonveg_icon,
-            rating = 3.8
+            rating = "5.0"
         ),
         FoodCard(
             img = R.drawable.food6,
@@ -82,7 +82,7 @@ fun FoodList(){
             price = 360,
             distance = "1.6km",
             veg_icon = R.drawable.nonveg_icon,
-            rating = 3.8
+            rating = "4.2"
         ),
         FoodCard(
             img = R.drawable.food7,
@@ -94,7 +94,7 @@ fun FoodList(){
             price = 360,
             distance = "1.6km",
             veg_icon = R.drawable.nonveg_icon,
-            rating = 2.4
+            rating = "2.5"
         ),
         FoodCard(
             img = R.drawable.food8,
@@ -106,7 +106,7 @@ fun FoodList(){
             price = 360,
             distance = "1.6km",
             veg_icon = R.drawable.nonveg_icon,
-            rating = 4.8
+            rating = null
         ),
         FoodCard(
             img = R.drawable.food9,
@@ -118,7 +118,7 @@ fun FoodList(){
             price = 360,
             distance = "1.6km",
             veg_icon = R.drawable.nonveg_icon,
-            rating = 4.5
+            rating = "3.5"
         ),
         FoodCard(
             img = R.drawable.food10,
@@ -130,7 +130,7 @@ fun FoodList(){
             price = 360,
             distance = "1.6km",
             veg_icon = R.drawable.nonveg_icon,
-            rating = 3.8
+            rating = "1.5"
         )
 
 

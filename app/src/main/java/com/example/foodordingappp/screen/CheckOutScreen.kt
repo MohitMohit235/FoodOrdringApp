@@ -1,4 +1,4 @@
-package com.example.foodordingappp.allscreenui
+package com.example.foodordingappp.screen
 
 
 import androidx.compose.foundation.background
@@ -37,8 +37,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.foodordingappp.R
-import com.example.foodordingappp.allscreenui.AllCardsScreen.AddressSelectionCard
-import com.example.foodordingappp.allscreenui.AllCardsScreen.Checktotal
+import com.example.foodordingappp.allscreenui.allcardpackeg.AddressSelectionCard
+import com.example.foodordingappp.allscreenui.allcardpackeg.Checktotal
 import com.example.foodordingappp.allscreenui.ButtonBar.my_Preview7
 
 

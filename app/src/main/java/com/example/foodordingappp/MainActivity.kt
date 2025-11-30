@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.example.foodordingappp.allscreenui.Main_Screen
+import com.example.foodordingappp.screen.Main_Screen
 import com.example.foodordingappp.ui.theme.FoodOrdingApppTheme
 
 class MainActivity : ComponentActivity() {

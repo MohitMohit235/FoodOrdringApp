@@ -1,4 +1,4 @@
-package com.example.foodordingappp.allscreenui.AllCardsScreen
+package com.example.foodordingappp.allscreenui.allcardpackeg
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -57,7 +57,7 @@ fun FoodCard(
     price: Int,
     distance: String,
     veg_icon: Int,
-    rating: Double?
+    rating: String?
 
 ) {
 
@@ -94,10 +94,10 @@ fun FoodCard(
                     ){
                         Box(
                             modifier = Modifier
-                                .padding(start = 5.dp)
+                                .padding(start = 8.dp)
                                 .clip(shape = MaterialTheme.shapes.extraSmall)
                                 .background(Color.Black.copy(alpha = 0.7f))
-                                .padding(horizontal = 1.dp)
+                                .padding(horizontal = 2.dp)
 
                         ) {
                             Text(
@@ -136,7 +136,7 @@ fun FoodCard(
                             .background(
                                 brush = Brush.horizontalGradient(
                                     colors = listOf(
-                                        Color.Blue.copy(alpha = 0.8f),
+                                       Color(0xFFE73F46),
                                         Color.Transparent
                                     )
                                 )
@@ -147,11 +147,11 @@ fun FoodCard(
                 }
             }
 
-            Column(modifier = Modifier.padding(12.dp)) {
+            Column(modifier = Modifier.padding(8.dp)) {
 
                 Row (modifier = Modifier.fillMaxWidth(),
                     verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.SpaceBetween
+                    horizontalArrangement = Arrangement.spacedBy(3.dp)
                 ) {
                     Row (verticalAlignment = Alignment.Bottom){
                         Text(
@@ -185,10 +185,10 @@ fun FoodCard(
                             )
                         }
                     }
-                    RatingCard(text = "${rating}")
+                    RatingCard(text =rating)
                 }
 
-                Spacer(modifier = Modifier.height(6.dp))
+//                Spacer(modifier = Modifier.height(3.dp))
 
                     Row (modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(3.dp),
@@ -223,7 +223,7 @@ fun FoodCard(
 
                     }
 
-                Spacer(modifier = Modifier.height(6.dp))
+//                Spacer(modifier = Modifier.height(6.dp))
 
                 Row (modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
@@ -282,6 +282,6 @@ private fun my_preview46() {
         price = 360,
         distance = "1.6km",
         veg_icon = R.drawable.nonveg_icon,
-        rating = 3.4
+        rating = "2.0"
     )
 }

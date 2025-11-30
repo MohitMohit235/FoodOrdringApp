@@ -1,4 +1,4 @@
-package com.example.foodordingappp.allscreenui.AllCardsScreen
+package com.example.foodordingappp.allscreenui.allcardpackeg
 
 
 import androidx.compose.foundation.background
@@ -63,7 +63,7 @@ fun MORE_EXPLORE(){
             ) {
 
                 MoreCard(imag = R.drawable.img9, Text = "Offers")
-                MoreCard(imag = R.drawable.icon19, Text = "Food\non train")
+                MoreCard(imag = R.drawable.icon19, Text = "Train Food")
                 MoreCard(imag = R.drawable.icon7, Text = "Lunch")
                 MoreCard(imag = R.drawable.icon18, Text = "Tiffin Box")
                 MoreCard(imag = R.drawable.img3, Text = "Health")

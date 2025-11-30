@@ -1,6 +1,8 @@
-package com.example.foodordingappp.allscreenui
+package com.example.foodordingappp.allscreenui.allcardpackeg
 
 
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.Intent
 import android.net.Uri
 import android.widget.Toast
@@ -99,9 +101,9 @@ fun LocationCard() {
                     Button(
                         onClick = {
                             val clipboard =
-                                android.content.ClipboardManager::class.java
+                                ClipboardManager::class.java
                                     .let { cmClass -> context.getSystemService(cmClass) }
-                            val clip = android.content.ClipData.newPlainText("Address", address)
+                            val clip = ClipData.newPlainText("Address", address)
                             clipboard?.setPrimaryClip(clip)
                             Toast.makeText(context, "Address Copied!", Toast.LENGTH_SHORT).show()
                         },

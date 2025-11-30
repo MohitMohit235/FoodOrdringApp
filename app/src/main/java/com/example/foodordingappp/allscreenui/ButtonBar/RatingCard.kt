@@ -109,5 +109,5 @@ fun RatingCard(text: String?){
 @Preview
 @Composable
 private fun my_preview46() {
-RatingCard(text = null)
+RatingCard(text = "3.5")
 }

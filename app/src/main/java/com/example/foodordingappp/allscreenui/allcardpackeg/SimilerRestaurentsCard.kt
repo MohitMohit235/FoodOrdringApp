@@ -1,4 +1,4 @@
-package com.example.foodordingappp.allscreenui.AllCardsScreen
+package com.example.foodordingappp.allscreenui.allcardpackeg
 
 
 import androidx.compose.foundation.Image

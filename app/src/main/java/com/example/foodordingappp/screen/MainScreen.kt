@@ -1,4 +1,4 @@
-package com.example.foodordingappp.allscreenui
+package com.example.foodordingappp.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Spacer
@@ -12,9 +12,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.foodordingappp.allscreenui.AllCardsScreen.MORE_EXPLORE
-import com.example.foodordingappp.allscreenui.AllCardsScreen.OfferCard
-import com.example.foodordingappp.allscreenui.AllCardsScreen.SearchBar
+import com.example.foodordingappp.allscreenui.allcardpackeg.FoodHorizontal
+import com.example.foodordingappp.allscreenui.allcardpackeg.HorizontalTabBar
+import com.example.foodordingappp.allscreenui.allcardpackeg.MORE_EXPLORE
+import com.example.foodordingappp.allscreenui.allcardpackeg.SearchBar
+import com.example.foodordingappp.allscreenui.allcardpackeg.TopBar
+import com.example.foodordingappp.allscreenui.listpackge.FoodList
 
 @Preview
 @Composable

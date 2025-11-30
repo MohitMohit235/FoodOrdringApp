@@ -1,4 +1,4 @@
-package com.example.foodordingappp.allscreenui
+package com.example.foodordingappp.allscreenui.allcardpackeg
 
 
 
@@ -19,7 +19,6 @@ import androidx.compose.material3.Switch
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.filled.ShareLocation
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon

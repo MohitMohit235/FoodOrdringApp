@@ -1,4 +1,4 @@
-package com.example.foodordingappp.allscreenui.AllCardsScreen
+package com.example.foodordingappp.allscreenui.allcardpackeg
 
 
 import androidx.compose.foundation.Canvas
@@ -68,15 +68,7 @@ fun DashedDivider(
 @Preview
 @Composable
 private fun my_preview8() {
-
-    DashedDivider(
-        color = Color.Gray,
-        thickness = 2.dp,
-        dashWidth = 12.dp,
-        dashGap = 6.dp
-    )
-
-
+    MoreCard(imag = R.drawable.icon19, Text = "Train")
 }
 
 
